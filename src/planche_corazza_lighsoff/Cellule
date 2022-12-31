@@ -12,4 +12,17 @@ public class Cellule {
     int X;
     int Y;
     boolean victoire = false;
+    
+    public Cellule ( int X; int Y){
+        X=x;
+        Y=y;
+    }
+    
+   public voic activate(){
+        Active= True;
+   }
+   
+   public void desactivate () {
+        Active =False ; 
+   }
 }

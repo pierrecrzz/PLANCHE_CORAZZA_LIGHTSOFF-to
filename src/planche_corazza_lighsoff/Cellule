@@ -8,5 +8,8 @@
  * @author coraz
  */
 public class Cellule {
-    
+    boolean Active;
+    int X;
+    int Y;
+    boolean victoire = false;
 }

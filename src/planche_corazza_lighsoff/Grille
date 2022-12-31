@@ -56,4 +56,24 @@ public void touchcell(int x, int y){
             
         }
 }
+
+public void affichergrille(){
+        for(int k = 0; k < Ligne; k++){
+            for(int i = 0; i < Colonne; i++){
+                System.out.print("[" + CellulesJeu[k][i].isactivate() + "]");
+                if(i == Colonne - 1){
+                    System.out.println("");
+                }
+            }
+        }
+}
+    
+public void clear(){
+     for(int k = 0; k < Ligne; k++){
+        for(int i = 0; i < Colonne; i++){
+           CellulesJeu[k][i].desactivate();
+        }
+     }
+}
+    
 }

@@ -32,4 +32,28 @@ public boolean isfinish(){
         }
         return true;
 }   
+
+public void touchcell(int x, int y){
+        CellulesJeu[x][y].changestate();
+        try{
+            CellulesJeu[x + 1][y].changestate();
+        }catch(Exception e){
+            
+        }
+        try{
+            CellulesJeu[x - 1][y].changestate();
+        }catch(Exception e){
+            
+        }
+        try{
+            CellulesJeu[x][y + 1].changestate();
+        }catch(Exception e){
+            
+        }
+        try{
+            CellulesJeu[x][y - 1].changestate();
+        }catch(Exception e){
+            
+        }
+}
 }

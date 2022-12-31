@@ -25,4 +25,17 @@ public class Cellule {
    public void desactivate () {
         Active =False ; 
    }
+   
+   public boolean isactivate(){
+        return Active;
+    }
+    
+    public void changestate(){
+        if(isactivate()){
+            desactivate();
+        }else{
+            activate();
+        }
+    }
+   
 }

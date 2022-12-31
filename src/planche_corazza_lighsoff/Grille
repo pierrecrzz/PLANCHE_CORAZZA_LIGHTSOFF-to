@@ -19,7 +19,17 @@ public Grille(){
       for(int i = 0; i < Colonne; i++){
           CellulesJeu[k][i] = new Cellule(k, i);
             }
+   }
+}
+
+public boolean isfinish(){
+        for(int k = 0; k < Ligne; k++){
+            for(int i = 0; i < Colonne; i++){
+                if(CellulesJeu[k][i].isactivate()){
+                    return false;
+                }
+            }
         }
-    }
-    
+        return true;
+}   
 }

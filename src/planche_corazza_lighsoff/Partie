@@ -9,5 +9,33 @@ package planche_corazza_lighsoff;
  * @author coraz
  */
 public class Partie {
+  grille = new Grille();
+        
+    }
     
+    public void setcellulesrandom(int n){
+        Random r = new Random();
+        
+        while(n>0){
+            int x = r.nextInt(5);
+            int y = r.nextInt(5);
+            if(!grille.CellulesJeu[x][y].isactivate()){
+                grille.CellulesJeu[x][y].activate();
+                n--;
+            }
+        }
+        
+    }
+    
+    public void initcellules(){
+        Random r = new Random();
+        for(int k = 0; k < 5; k++){
+            for(int i = 0; i < 5; i++){
+                int rr = r.nextInt(2);
+                if(rr == 1){
+                    grille.CellulesJeu[k][i].activate();
+                }
+            }
+        }
+    }
 }

@@ -9,5 +9,17 @@ package planche_corazza_lighsoff;
  * @author coraz
  */
 public class Grille {
+
+int Ligne = 5;
+int Colonne = 5;
+Cellule[][] CellulesJeu= new Cellule[Ligne][Colonne];
+    
+public Grille(){
+   for(int k = 0; k < Ligne; k++){
+      for(int i = 0; i < Colonne; i++){
+          CellulesJeu[k][i] = new Cellule(k, i);
+            }
+        }
+    }
     
 }

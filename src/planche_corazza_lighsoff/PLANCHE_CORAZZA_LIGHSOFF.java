@@ -10,11 +10,8 @@ package planche_corazza_lighsoff;
  */
 public class PLANCHE_CORAZZA_LIGHSOFF {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+    public static void main(String[] args){
+        Partie partie = new Partie();
+        partie.lancerpartie();    
+    }   
 }
